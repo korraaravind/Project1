@@ -1,0 +1,18 @@
+Step 1: Project Setup
+We're setting up a Maven project in Eclipse IDE for our E-commerce API.
+
+Step 2: Project Structure
+We've organized our project structure into packages: controllers, dtos, daos, models, and services. This helps maintain a clean and modular codebase.
+
+Step 3: Code Explanation
+DTOs (Data Transfer Objects): DTOs are simple POJOs that are used to transfer data between layers of the application. In our case, ProductDTO represents the data that is transferred between the controller and service layers.
+
+DAOs (Data Access Objects): DAOs are responsible for interacting with the database. Here, ProductDAO is an interface that extends JpaRepository provided by Spring Data JPA. It provides CRUD operations for the Product entity.
+
+Models: Models represent the entities in our application. The Product class is mapped to the products table in the database.
+
+Controllers: Controllers handle incoming HTTP requests. The ProductController defines endpoints for retrieving, creating, updating, and deleting products.
+
+Service Layer: The ProductService contains the business logic. It interacts with the DAO layer to perform CRUD operations on products.
+
+Step 4: Running the Application
